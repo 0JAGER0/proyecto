@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+/* COLOR DE FONDO */ 
+body{
+    background-color:gray;
+    background-image: url('https://previews.123rf.com/images/lorasutyagina/lorasutyagina1705/lorasutyagina170500041/79056769-bright-colored-eggs-on-the-white-background-seamless-scratched-pattern-simple-abstract-texture-for-d.jpg');
+    background-size: 100px;
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+
+/* color de las letras h1 */
+h1 {
+    color: rgb(255,55,99)
+}
+
+ /* texto marcado con un recuadro */ 
+span{
+    border: 2pc solid #fff;
+    border-color: #2c258b;
+    border-color: #2c258b44;
+    outline: yellow 2px;
+}
+
+#tit-principal{
+    text-decoration: line-through;
+    color: cornflowerblue;
+    text-shadow: 2px 2px #fff;
+}
+
+ /* LETRA CON COLOR EN GRANDE */ 
+a{
+    text-decoration: none;
+    color: rebeccapurple;
+    text-transform: uppercase;
+}
+
+ /* LETRAS CON COLOR */ 
+.a-lorem{
+    text-transform: capitalize;
+    color: greenyellow;
+}
+
+ /* TIPO DE LETRA */ 
+p{
+    text-align: justify;
+    letter-spacing: 2px;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+
+img{
+    width: 200px;
+    height: auto;
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    border-radius: 100px;
+}
+
+
+div{
+    background-color: brown;
+    color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+.center{
+    text-align: center;
+    border: 3px solid green;
+    width: 400px;
+    margin: 15px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
