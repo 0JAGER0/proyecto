@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer formulario</title>
+</head>
+<body>
+    <h2>Mi primer formulario</h2>
+
+    <form name="primer-Formulario">
+ 
+        <!--controladores tipo input-->
+        <p>
+
+        
+            <input 
+                type="text" 
+                name="nombre" 
+                id="nombre" 
+                placeholder="ingresa Nombre"
+                value="alejandra"
+                readonly
+            /> <br>
+            
+            <input type="password" name="contra"/>
+            <input type="date" name="fechia"/>
+            <input type="number" name="numero" id="numero"> <br>
+            <label for="correo">escribe tu correo</label>
+            <input type="email" name="correo" id="correo">
+        </p>
+
+        <!--controladores en envio y limpieza del formulario-->
+        <p>
+            <input type="submit" name="enviar" value="Mandalo">
+            <input type="reset" >
+        </p>
+
+        <fieldset>
+            <legend>campus favorito</legend>
+            <!--control select-->
+            <p>
+                <label for="alimentos">selecciona alimento</label>
+                <select name="alimento" id="alimento" multiple>
+                    <option value="1">Pan</option>
+                    <option value="cebol">cebolla</option>
+                    <option>mani</option>
+                    <option value="4">sandia</option>
+                </select>
+
+                <select name="alimento" id="alimento" size="3">
+                    <optgroup label="lacteos">
+                        <option value="1">leche</option>
+                        <option value="2">queso</option>
+                        <option value="3">yougurt</option>
+
+                    </optgroup>
+                    <optgroup label="frutas">
+                        <option value="4">sandia</option>
+                        <option value="5">palta</option>
+                        <option value="6">naranja</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <!--control de texto multilinea-->
+            <p>
+                <textarea name="texto" cols="20" rows="10" placeholder="Escribe">
+                    escribe
+                </textarea>
+            </p>
+        </fieldset>
+
+        <!--control de texto multilinea-->
+        <button type="button">click</button>
+
+    </form>
+    
+</body>
+</html>
