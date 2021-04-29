@@ -148,6 +148,21 @@
             });
 
 
+
+
+            $('#formulario1').submit(function(){
+                var elemento = $('#ciudad').val()
+                if (elemento == "") {
+                    event.preventDefault();
+                    
+                    alert('El nombre de la ciudad es obligatorio')
+                } else {
+                    console.log("Se envía el formulario")
+                }
+                
+            });
+
+
     </script>
 
 </body>
