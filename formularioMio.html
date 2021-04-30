@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularioooooo</title>
-
+    <link type="text/css" rel="stylesheet" href="cssMio.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 </head>
@@ -46,118 +46,83 @@
             <!-- DESDE AQUI COMIENZA TODO -.,--,..-,-.-,-.,-.-,.-,-.-,.-,-.,-.-,-.,-.-,-.-,-.-,.-,-.-,-.,-.-,-.-,-.,-.-,-.-,-.,-.-,-.,-,-.,-.,,-->
 
             <!-- nombre completo-->
-            <p>(*) opcional</p>
-        <form id="formulario1">
-            <div class="form-group">
-                <div  class="col-5">
-                    <label for="nombre">Nombre Completo: </label>
-                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingresa nombre">
-                </div>
-            </div>
+            <p>(*) CAMPO OPCIONAL</p>
+        <form class="needs-validation" novalidate id="formulario" name="formulario">
             
+                <div class="col-md-6 mb-3">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese nombre completo" required>
+                    <div class="valid-feedback">
+                        Bien hecho!
+                    </div>
+                </div>
 
-            <!-- Correo-->
-            <div class="form-group">
-                <div  class="col-7">
+                <div class="col-md-6 mb-3">
                     <label for="correo">Escribe tu correo</label>
-                    <input type="email" class="form-control" name="correo" id="correo" placeholder="nombre@ejemplo.com">
+                    <input type="email" class="form-control" name="correo" id="correo" placeholder="nombre@ejemplo.com" required>
+                    <div class="valid-feedback">
+                        Bien hecho!
+                    </div>
+                </div>             
+
+                <div class="col-md-3 mb-3">
+                    <label for="opcion">Elegir opcion de rut o pasaporte</label>
+                    <select class="custom-select" name="opcion" id="opcion" required>
+                      <option selected disabled value="">Elegir...</option>
+                      <option>Rut</option>
+                      <option>Pasaporte</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Porfavor selecciona una opcion
+                    </div>
+                    <div class="valid-feedback">
+                        Bien hecho!
+                    </div>
                 </div>
-            </div>
 
-            <br>
-            <!-- RUT-->
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-primary">
-                    <input type="radio" name="opcion" id="option1" checked> Rut
-                </label>
+                <div class="col-md-6 mb-3">
+                    <label for="rut">Ingresa el rut o pasaporte aqui</label>
+                    <input type="text" class="form-control" name="rut" id="rut" placeholder="ejemplo: 11.111.111-1" required>
+                    <div class="valid-feedback">
+                        Bien hecho!
+                    </div>
+                </div>   
 
-                <label class="btn btn-primary">
-                    <input type="radio" name="opcion" id="option2"> Pasaporte
-                </label> 
-              </div>
 
-            <div class="form-group">
-                <div class="col-5">
-                    <label for="rut_pasaport">Rut o Pasaporte</label>
-                    <input type="text" class="form-control" name="rut_pasaport" id="rut_pasaport" placeholder="Rut o pasaporte">
+                <div class="col-md-3 mb-3">
+                    <label for="telefono">(*) Numero telefonico</label>
+                    <input type="number" class="form-control" name="telefono" id="telefono" placeholder="ejemplo: 924869218" >
                 </div>
-            </div>
 
-            <br>
-
-            <div class="form-group">
-                <div class="col-5">
-                    <label for="numero">Numero de telefono (*)</label>
-                    <input type="number" class="form-control" name="numero" id="numero" placeholder="Numero">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-5">
-                    <label for="ciudad">Ciudad de residencia</label>
-                    <input type="text" class="form-control" name="ciudad" id="ciudad" placeholder="Ciudad">
-                </div>
-            </div>
-
-            <div class="form-group">
+                <div class="col-md-6 mb-3">
+                    <label for="Ciudad">Ciudad de residencia</label>
+                    <input type="text" class="form-control" name="Ciudad" id="Ciudad" placeholder="Santiago" required>
+                    <div class="valid-feedback">
+                        Bien hecho!
+                    </div>
+                </div>   
+                
                 <div class="col-12">
-                <label for="areatexto">En que o porque te gustaria participar</label>
-                <textarea class="form-control" name="areatexto" id="areatexto" placeholder="Me gustaria participar porque........." rows="4"></textarea>
+                    <label for="areatexto">En que o porque te gustaria participar</label>
+                    <textarea class="form-control" name="areatexto" id="areatexto" placeholder="Me gustaria participar porque........." rows="4" required></textarea>
                 </div>
-            </div>      
-        
-            <input type="submit" class="btn btn-primary" id="enviar" value="Enviar">
-            <input type="reset" class="btn btn-secondary" id="limpiar" value="Limpiar">
-         
+                
+            </BR>
 
-        </form>
+                <input type="submit" class="btn btn-primary" id="enviar" value="Enviar">
+                <input type="reset" class="btn btn-secondary" id="limpiar" value="Limpiar">
+
+              </form>
+              
     </div>
 
-
+    <!-- LINKS DE BOOTSTRAPS-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
-
-    <script>
-            $('#formulario1').submit(function(){
-                var elemento = $('#nombre').val()
-                if (elemento == "") {
-                    event.preventDefault();
-                    
-                    alert('El Nombre completo es obligatorio')
-                } else {
-                    console.log("Se envía el formulario")
-                }
-                
-            });
-
-            $('#formulario1').submit(function(){
-                var elemento = $('#correo').val()
-                if (elemento == "") {
-                    event.preventDefault();
-                    
-                    alert('El Corre es obligatorio')
-                } else {
-                    console.log("Se envía el formulario")
-                }
-                
-            });
-
-
-            $('#formulario1').submit(function(){
-                var elemento = $('#ciudad').val()
-                if (elemento == "") {
-                    event.preventDefault();
-                    
-                    alert('El nombre de la ciudad es obligatorio')
-                } else {
-                    console.log("Se envía el formulario")
-                }
-                
-            });
-
-
-    </script>
+    <!-- LINKS DE VALIDACION DE FOMRULARIO-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="ValidadorFormularioMio.js"></script>
 
 </body>
 </html>
