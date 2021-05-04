@@ -1,1 +1,12 @@
 
+form {
+    padding: 20px;
+    background: #194169;
+    color: #fff;
+    
+  }
+
+form .error{
+    color: #ff0000;
+  }
+
