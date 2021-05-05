@@ -47,11 +47,11 @@
 
             <!-- nombre completo-->
             <p>(*) CAMPO OPCIONAL</p>
-        <form class="needs-validation" novalidate id="formulario" name="formulario">
+        <form id="formulario" name="formulario">
             
                 <div class="col-md-6 mb-3">
                     <label for="nombre">Nombre Completo</label>
-                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese nombre completo" required>
+                    <input type="text" class="form-control " name="nombre" id="nombre" placeholder="Ingrese nombre completo" required>
                     <div class="invalid-feedback">
                         Por favor llene este campo
                       </div>
@@ -105,7 +105,7 @@
 
                 <div class="col-md-6 mb-3">
                     <label for="Ciudad">Ciudad de residencia</label>
-                    <input type="text" class="form-control" name="Ciudad" id="Ciudad" placeholder="Santiago" required>
+                    <input type="text" class="form-control" name="Ciudad" id="Ciudad" placeholder="Ejemplo: Santiago" required>
                     <div class="invalid-feedback">
                         Por favor llene este campo
                       </div>
@@ -116,7 +116,7 @@
                 
                 <div class="col-12">
                     <label for="areatexto">En que o porque te gustaria participar</label>
-                    <textarea class="form-control" name="areatexto" id="areatexto" placeholder="Me gustaria participar porque........." rows="4" required></textarea>
+                    <textarea class="form-control" name="areatexto" id="areatexto" placeholder="Me gustaria participar porque.............." rows="4" required></textarea>
                     <div class="invalid-feedback">
                         Porfavor llene este campo
                       </div>
@@ -131,41 +131,45 @@
                 <input type="reset" class="btn btn-secondary" id="limpiar" value="Limpiar">
 
               </form>
+
+              <button type="button" class="btn btn-info" id="traer-datos">Traer datos</button>
+              <table class="table" id="tabla-cat-comidas">
+
+                <!-- TABLA CON AJAX-->
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Imagen</th>
+                      <th scope="col">Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                  </tbody>
+              </table>
               
     </div>
 
 
-        <button type="button" class="btn btn-info" id="traer-datos">Traer datos</button>
-    <table class="table" id="tabla-cat-comidas">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Imagen</th>
-            <th scope="col">Descripción</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-        </tbody>
-    </table>
+
 
     <!-- LINKS DE BOOTSTRAPS-->
     <!-- primer link es el que ocupaba con formulario solo-->
