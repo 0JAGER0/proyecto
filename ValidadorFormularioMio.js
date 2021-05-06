@@ -105,11 +105,12 @@ $("#formulario").validate({
     },
     correo: "Por favor ingrese el correo"
   },
+  submitHandler: function(form) {
+    form.submit();
+  },
   highlight: function(element, errorClass) {
     $(element).fadeOut(function() {
-      $(element).fadeIn()
-
-      ;
+      $(element).fadeIn();
     });
   }
 });
