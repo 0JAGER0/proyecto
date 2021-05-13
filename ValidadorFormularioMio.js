@@ -81,7 +81,6 @@ $("#formulario").validate({
     },
     correo: {
       required: true,
-
       email: true
     },
     rut: {
